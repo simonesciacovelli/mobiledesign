@@ -13,8 +13,9 @@ p{
 #title{
 	background-color:#232323;
 	border-radius: 20px;
-	margin-top: 230px;
+	margin-top: 300px;
 	color: white;
+  text-align: center;
 }
 
 .container{
@@ -32,10 +33,26 @@ p{
 .video1{
 	height: 500px;
 	width:auto;
+  border-style: solid;
+  border-width: 4.5px;
+  border-radius: 20px;
 }
 
 .text{
 	padding: 40px;
+}
+
+.text2{
+  margin-top: 400px;
+  margin-bottom: 400px;
+  width: auto;
+  height: auto;
+}
+
+.text2 p{
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Playfar', sans-serif;
 }
 
 .anim1, .anim2, .anim3{
@@ -54,8 +71,6 @@ p{
 }
 
 .lottie{
-  border-style: solid;
-  border-width: 5px;
 }
 
 /*------arrowanimation-------*/
@@ -189,8 +204,9 @@ p{
 	}
 
 .video1{
-	height: 200px;
+	height: 233px;
 	width:auto;
+  border: none;
 	}
 
 }
