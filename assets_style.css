@@ -68,15 +68,15 @@
     justify-content: center;
     cursor: pointer;
     transition: opacity .25s ease;
-    width: 40px;
-    height: 40px;
-    padding: 40px;
+    width: 20px;
+    height: 20px;
+    padding: 30px;
     border-bottom-right-radius: 10px;
 
 }
 
 .button_container img {
-  height: 24px;
+  height: 14px;
   width: auto;
 }
 
