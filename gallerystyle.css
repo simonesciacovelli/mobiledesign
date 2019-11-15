@@ -107,6 +107,10 @@ object-fit: cover;
 transition: 1s;
 }
 
+.main-carousel p {
+	font-size: 20px;
+}
+
 p{
 margin: 0;
 padding: 13px;
@@ -119,6 +123,15 @@ background-color: black;
 border-bottom-left-radius:20px;
 border-bottom-right-radius:20px;
 opacity: 1;
+}
+
+.infoimg{
+	height: 550px;
+	width: 100%;
+}
+
+.infoimg p{
+	font-size: 20px;
 }
 
 .camere, .charmery, .mercatale, .bw, .concepts{

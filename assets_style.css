@@ -40,7 +40,7 @@
 /*----overlay----*/
 
 .navbar{
-  z-index: 6;
+  z-index: 30;
  /* height:70px;*/
   background-color: #151515;
   display:none;
@@ -72,12 +72,14 @@
     height: 20px;
     padding: 30px;
     border-bottom-right-radius: 10px;
+    z-index: 40;
 
 }
 
 .button_container img {
   height: 14px;
   width: auto;
+  z-index: 40;
 }
 
 .overlay {
@@ -93,11 +95,26 @@
   overflow: hidden;
   z-index: 3;
 }
+
+/*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .overlay.open {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(19, 19, 20, 0.7);  
+  }
+  .warning {
+    display: none;
+  }
+}*/
+
+
 .overlay.open {
-  opacity: 0.9;
+/*  background-color: rgba(19, 19, 20, 0.95);*/
+  background-color: black;
+  opacity: 10;
   visibility: visible;
   height: 100%;
-  z-index: 3;
+  z-index: 29;
 }
 
 .overlay.open #wormmenu {
@@ -126,6 +143,7 @@
   font-family: "Roboto";
   font-weight: 300;
   text-align: center;
+  opacity: 10 !important,
 }
 .overlay ul {
   list-style: none;
@@ -135,6 +153,7 @@
   display: inline-block;
   position: relative;
   height: 100%;
+/*  opacity: 10 !important,*/
 }
 .overlay ul li {
   display: block;
@@ -146,7 +165,7 @@
 }
 .overlay ul li a {
   padding: 20px;
-  background-color: black;
+  background-color: #1b171a;
   display: block;
   position: relative;
   color: #FFF;
@@ -154,10 +173,10 @@
   overflow: hidden;
   border-radius: 10px;
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+/*.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
-}
-.overlay ul li a:after {
+}*/
+/*.overlay ul li a:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -167,7 +186,7 @@
   height: 3px;
   background: #FFF;
   transition: .35s;
-}
+}*/
 
 @keyframes fadeInRight {
   0% {
