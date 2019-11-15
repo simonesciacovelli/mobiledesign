@@ -318,6 +318,7 @@ img{
 	color: white;
 	width: 80%;
 	transition: 0.5s;
+	font-family: "Roboto";
 	background-color: black;
 	border-radius: 20px;
 	/*border-bottom-left-radius:20px;
