@@ -243,7 +243,7 @@ function draw() {
     for (var y = 0; y < worldImage.height; y++) {
         for (var x = 0; x < worldImage.width; x++) {
             var in_color = worldImage.get(x, y);
-            var dot_size = lightness(in_color) / 255 * 50;
+            var dot_size = lightness(in_color) / 255 * 20;
             ellipse(x * spacing + spacing * .5, y * spacing + spacing * .5, dot_size, dot_size);
         }
     }
