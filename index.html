@@ -224,40 +224,31 @@ input[type="color"]:hover::-webkit-color-swatch {
 var worldImage;
 
 function preload() {
-    worldImage = loadImage("knight.png");
+    worldImage = loadImage("scifi.png");
+    // worldImage = loadImage("/pixels/sketches/world_100.png");
 }
 
 function setup() {
     createCanvas(500, 500);
 }
 
+
 function draw() {
-    background(0);
+    background(0, 50, 50);
 
+    fill(200, 50, 50);
+    noStroke();
 
-
+    var spacing = 500 / worldImage.width;
     for (var y = 0; y < worldImage.height; y++) {
         for (var x = 0; x < worldImage.width; x++) {
             var in_color = worldImage.get(x, y);
-
-            var r = red(in_color);
-            var g = green(in_color);
-            var b = blue(in_color);
-
-            var out_color;
-            if (r === 255) {
-                out_color = color(0, 0, 255);
-            } else {
-                out_color = color(255, 0, 0);
-            }
-
-            worldImage.set(x, y, out_color);
-            worldImage.updatePixels();
+            var dot_size = lightness(in_color) / 255 * 50;
+            ellipse(x * spacing + spacing * .5, y * spacing + spacing * .5, dot_size, dot_size);
         }
     }
 
-    noSmooth();
-    image(worldImage, 0, 0, width, height);
+    // we don't draw the image, its just input
 
     noLoop();
 }
